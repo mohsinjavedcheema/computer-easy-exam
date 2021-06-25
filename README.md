@@ -23,3 +23,10 @@ Continuous deployment is an excellent way to accelerate the feedback loop with y
 
 What are the benefits of Cloud Computing
 Using different services, cloud computing offers more benefits than traditional computing. Cost saving, scalability, mobile storage, anytime anywhere access, better security, energy saving, environment benefits are some of benefits of the cloud computing.
+
+Difference b/w Git & Github
+Git is a revision control system, a tool to manage your source code history.
+
+GitHub is a hosting service for Git repositories.
+
+So they are not the same thing: Git is the tool, GitHub is the service for projects that use Git.
