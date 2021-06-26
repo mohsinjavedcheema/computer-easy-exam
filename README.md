@@ -35,3 +35,8 @@ Stages of Git
 Commited (stored in local database)
 Modified (file changed but not commited to database)
 Staged (modified file is marked to go into the next commit snapshot)
+
+3 methods of git reset?
+Soft
+Mixed
+Hard
