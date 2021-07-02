@@ -43,3 +43,10 @@ Hard
 
 Explain Docker Containers vs VMs
 First, a container is more lightweight than a VM. A container includes only the executables and its dependencies and different containers on the same machine share the same OS(operating system). While a VM  contains a full set of OS, and different VMs do not share the OS. A VM can run an OS that is different from its host machine, while the container needs to use the same OS as the host. Second, the hypervisor, such s VMware ESXi and KVM, is necessary in a VM environment, while it is not required for containers. For a VM, it needs to act as an independent machine which has the control of all its resources. However, in act, a VM runs in a non-privileged mode which does not have the capability to execute many privileged instructions. Therefore, a hypervisor is needed to translate a VM instruction into an instruction that can be executed by the host. On the contrary, since a container does not need to execute any privileged instruction, it communicates with the OS through the system calls, thus no other layer is required in between. Third, each VM has its own image file, while different containers may share some of their images. More specifically, container images are created in a layered manner,in which a new image can be created upon an existing image by adding another layer that contains the difference between the two. The image files of different VMs are isolated from each other.
+
+Explain Docker Architecture
+Docker provides the ability to package and run an application in a loosely isolated environment called a container. The isolation and security allow you to run many containers simultaneously on a given host. Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host. You can easily share containers while you work, and be sure that everyone you share with gets the same container that works in the same way.
+Here are few of the pros it has:
+> Fast, consistent delivery of your applications
+> Responsive deployment and scaling
+> Running more workloads on the same hardware
